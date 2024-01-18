@@ -1,0 +1,266 @@
+body{
+  margin: 0;
+  font-family: 'Courier New', Courier, ;
+  background-image: url(https://windows10spotlight.com/wp-content/uploads/2023/07/9a7c68eb658e1958e5261b17993db8a8.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+}
+
+
+.container{
+    top: 200px;
+    align-items: center;
+    height: 786px;
+    width: 780px;
+    border-radius: 60px;
+    padding: 56px;
+    margin-top: 10px;
+    background-color: rgb(95, 166,171);
+}
+
+#male{
+    top: 3px;
+    bottom: 20px;
+    right: 4px;
+    position: absolute;
+   padding-left: 200px;
+   margin-left: 6px;
+}
+
+#female{
+    top: 3px;
+    bottom: 20px;
+    right: 4px;
+    position: absolute;
+   padding-left: 200px;
+   margin-left: 6px;
+}
+
+input[type=email] {
+    width: 174%;
+    padding: 6px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+
+  input[type=tel] {
+    width: 86%;
+    padding: 6px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+  input[type=text],select {
+    width: 131%;
+    padding: 6px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+
+
+  input[type=date] {
+    width: 91%;
+    padding: 6px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+
+  input[type=password] {
+    width: 91%;
+    padding: 6px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+
+/* .wrapper .form .row .form-control {
+    box-shadow: none;
+} */
+
+
+.form-control {
+
+    display: block;
+    width: 133%;
+    padding: -7.625rem -21.25rem;
+    font-size: 1rem;
+    font-weight: 200;
+    line-height: 1.5;
+    
+}
+
+.error{
+    color: red;
+    display: none;
+}
+
+/* Upload imges */
+
+.upload{
+    width: 100px;
+    position: relative;
+    margin: auto;
+  }
+  
+  .upload img{
+    border-radius: 50%;
+    border: 6px solid #eaeaea;
+  }
+  
+  .upload .round{
+    position: absolute;
+    bottom: 2px;
+    right: 61px;  
+    background: #00B4FF;
+    width: 32px;
+    height: 32px;
+    line-height: 33px;
+    text-align: center;
+    border-radius: 50%;
+    /* overflow: hidden; */
+  }
+  
+  .upload .round input[type = "file"]{
+    position: absolute;
+    transform: scale(2);
+    opacity: 0;
+  }
+  
+  input[type=file]::-webkit-file-upload-button{
+      cursor: pointer;
+  }
+  
+
+
+ /* Importing fonts from Google */
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap'); */
+
+/* Reseting */
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(45deg, #ce1e53, #8f00c7);
+    min-height: 100vh;
+}
+
+.container{
+    align-items: center;
+    height: 735px;
+    width: 774px;
+    border-radius: 69px;
+    padding: 76px;
+    background-color: rgb(95, 166,171);
+}
+
+
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.wrapper {
+    max-width: 800px;
+    margin: 80px auto;
+    padding: 30px 45px;
+    box-shadow: 5px 25px 35px #3535356b;
+}
+
+.wrapper label {
+    display: block;
+    padding-bottom: 0.2rem;
+}
+
+.wrapper .form .row {
+    padding: 0.6rem 0;
+}
+
+.wrapper .form .row .form-control {
+    box-shadow: none;
+}
+
+.wrapper .form .option {
+    position: relative;
+    padding-left: 20px;
+    cursor: pointer;
+}
+
+
+.wrapper .form .option input {
+    opacity: 0;
+}
+
+.wrapper .form .checkmark {
+    position: absolute;
+    top: 1px;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #bbb;
+    border-radius: 50%;
+}
+
+.wrapper .form .option input:checked~.checkmark:after {
+    display: block;
+}
+
+.wrapper .form .option:hover .checkmark {
+    background: #f3f3f3;
+}
+
+.wrapper .form .option .checkmark:after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    display: block;
+    background: linear-gradient(45deg, #ce1e53, #8f00c7);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 300ms ease-in-out 0s;
+}
+
+.wrapper .form .option input[type="radio"]:checked~.checkmark {
+    background: #fff;
+    transition: 300ms ease-in-out 0s;
+}
+
+.wrapper .form .option input[type="radio"]:checked~.checkmark:after {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+#sub {
+    display: block;
+    width: 100%;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    color: #333;
+}
+
+#sub:focus {
+    outline: none;
+}
+
+@media(max-width: 768.5px) {
+    .wrapper {
+        margin: 30px;
+    }
+
+    .wrapper .form .row {
+        padding: 0;
+    }
+}
+
+@media(max-width: 400px) {
+    .wrapper {
+        padding: 25px;
+        margin: 20px;
+    }
+} */
